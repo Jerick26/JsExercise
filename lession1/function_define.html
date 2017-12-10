@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>点击这个按钮，来调用带参数的函数。</p>
+
+<p id="demo"></p>
+
+<button onclick="myFunction('Bill Gates','CEO')">点击这里</button>
+<br />
+<button onclick="myFunction('Harry Potter', 'Wizard')">点击这里</button>
+
+<script>
+function myFunction(name,job)
+{
+alert("Welcome " + name + ", the " + job);
+}
+function getProduct(a, b) {
+  return a * b;
+}
+document.getElementById("demo").innerHTML = getProduct(3, 4)
+</script>
+
+</body>
+</html>
